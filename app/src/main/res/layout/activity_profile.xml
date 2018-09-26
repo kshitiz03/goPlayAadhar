@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/linearLayout_view"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileImage"
+            android:src="@android:drawable/ic_media_pause"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewName"
+            android:textColor="@color/bg_screen2"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+        <Button
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/ripple_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profout"
+        android:textColor="@color/bg_screen3"
+        android:text="Logout"/>
+    </LinearLayout>
+    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:textColor="@color/bg_screen2"
+                android:text="Fill out the form and get your own sports Aadhar Card" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:textColor="@color/bg_screen2"
+                android:text="Date of Birth" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextHint"
+        android:layout_marginHorizontal="20dp"
+
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/dob"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Format- 03-12-1995"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/bg_screen2"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/bg_screen2"
+        android:text="Choose your 2 favourite sports" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/bg_screen2"
+        android:text="Enter Priority 1" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextHint"
+        android:layout_marginHorizontal="20dp"
+
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/priority1"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:hint="For ex- Cricket, Badminton, etc"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/bg_screen2"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/level1"
+        android:prompt="@string/hint"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/bg_screen2"
+        android:text="Enter Priority 2" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextHint"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/priority2"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:hint="For ex- Cricket, Badminton, etc"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/bg_screen2"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/level2"
+        android:prompt="@string/hint"
+        android:gravity="center"
+                android:layout_margin="20dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextHint"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/addr"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Address"
+            android:textColorHint="@color/bg_screen2"
+            android:textSize="16sp"
+            android:inputType="text|textMultiLine"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/ripple_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/bg_screen3"
+        android:text="Submit"/>
+
+        </LinearLayout>
+
+</ScrollView>
